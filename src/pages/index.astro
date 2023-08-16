@@ -1,0 +1,17 @@
+---
+import Regra from "../lib/components/Regra.svelte";
+import '../app.postcss'
+---
+
+<html lang="pt-br" class="dark">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Proportion Rule</title>
+	</head>
+	<body>
+		<Regra client:load />
+	</body>
+</html>
