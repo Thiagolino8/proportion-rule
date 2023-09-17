@@ -10,17 +10,17 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/svelte": "^3.1.0",
-    "@astrojs/tailwind": "^4.0.0",
-    "astro": "^2.10.9",
+    "@astrojs/svelte": "^4.0.2",
+    "@astrojs/tailwind": "^5.0.0",
+    "@formkit/auto-animate": "^0.8.0",
+    "astro": "^3.1.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
-    "lucide-svelte": "^0.268.0",
-    "svelte": "^4.0.0",
+    "lucide-svelte": "^0.279.0",
+    "svelte": "^4.2.0",
     "tailwind-merge": "^1.14.0",
-    "tailwindcss": "^3.0.24",
-    "@formkit/auto-animate": "^0.7.0",
-    "tailwindcss-animate": "^1.0.6"
+    "tailwindcss": "^3.3.3",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "cssnano": "^6.0.1"

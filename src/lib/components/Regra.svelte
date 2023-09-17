@@ -9,7 +9,7 @@
 	$: result = Number(((value3 * value2) / value1).toFixed(2))
 </script>
 
-<main use:autoAnimate class="h-screen grid place-content-center gap-4 font-mono">
+<main use:autoAnimate class="grid place-content-center gap-4 font-mono">
 	<h1 class="text-4xl text-center font-extrabold">Proportion Rule</h1>
 	<section class="grid grid-cols-2 gap-4">
 		<Input type="number" bind:value={value1} />

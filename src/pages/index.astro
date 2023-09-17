@@ -1,5 +1,6 @@
 ---
 import Regra from "../lib/components/Regra.svelte";
+import Footer from "../lib/components/Footer.astro";
 import '../app.postcss'
 ---
 
@@ -11,7 +12,8 @@ import '../app.postcss'
 		<meta name="generator" content={Astro.generator} />
 		<title>Proportion Rule</title>
 	</head>
-	<body>
+	<body class="h-screen grid grid-rows-[1fr_auto]">
 		<Regra client:load />
+		<Footer />
 	</body>
 </html>
