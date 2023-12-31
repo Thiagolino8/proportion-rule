@@ -5,6 +5,8 @@ import svelte from "@astrojs/svelte";
 
 // https://astro.build/config
 export default defineConfig({
-  compressHTML: true,
+  build: {
+    inlineStylesheets: 'always'
+  },
   integrations: [tailwind(), svelte()]
 });

@@ -2,11 +2,11 @@
 	import {Input} from './ui/input'
 	import autoAnimate from '@formkit/auto-animate'
 
-	let value1: number
-	let value2: number
-	let value3: number
+	let value1 = $state<number>(0)
+	let value2 = $state<number>(0)
+	let value3 = $state<number>(0)
 
-	$: result = Number(((value3 * value2) / value1).toFixed(2))
+	const result = $derived(Number(((value3 * value2) / value1).toFixed(2)))
 </script>
 
 <main use:autoAnimate class="grid place-content-center gap-4 font-mono">
@@ -15,7 +15,7 @@
 		<Input type="number" bind:value={value1} />
 		<Input type="number" bind:value={value2} />
 		<Input type="number" bind:value={value3} />
-		<Input type="number" bind:value={result} disabled />
+		<Input type="number" value={result} disabled />
 	</section>
 
 	{#if result}
